@@ -6,7 +6,7 @@
 
 <script>
 // import Menu from "./components/menu/menu.vue"
-import Main from "./components/main/main.vue"
+import Main from "./components/main/main"
 
 export default {
   name: 'App',

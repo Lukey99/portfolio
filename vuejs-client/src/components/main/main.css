@@ -1,9 +1,13 @@
-html, body{
-    margin: 0;
-    padding: 0;
+body::-webkit-scrollbar{
+    display: none;
 }
 
-.menu{
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#menu{
     background-color: black;
     position: absolute;
     top: 0px;
@@ -17,19 +21,49 @@ html, body{
     align-items: center;
     font-size: 100px;
     font-family: 'Lexend Zetta', sans-serif;
+    transition: all 0.5s;
+}
+
+#menu:hover{
+    font-size: 105px;
 }
 
 nav{
+    display: none;
     position: absolute;
     top: 0px;
-    left: 350px;
+    left: -1250px;
     width: 1570px;
     height: 100%;
-    display: flex;
-    flex-direction: column;
+    transform: all 1s;
+}
+
+.active_nav{
+    transition: all 1s;
+    display: block;
+}
+
+.hidden{
+    display: none;
+}
+
+.visuallyhidden{
+    opacity: 0;
+}
+
+@keyframes fadein{
+    from{
+        opacity: 0;
+        transform: translateX(0);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(1600px);
+    }
 }
 
 .onglet{
+    display: block;
     width: auto;
     height: 25%;
     display: flex;
@@ -39,11 +73,22 @@ nav{
     color: black;
     font-family: 'Lexend Zetta', sans-serif;
     transition: all 1s;
+    animation: fadein ease-out 0.75s forwards;
+}
+
+@keyframes fadeout{
+    from{
+        opacity: 1;
+        transform: translateX(-1600px);
+    }
+    to{
+        opacity: 0;
+        transform: translateX(0);
+    }
 }
 
 .onglet:hover{
     letter-spacing: 10px;
-    transition: all 1s;
 }
 
 a:link{
@@ -53,8 +98,4 @@ a:link{
 
 a:visited{
     color: black;
-}
-
-a:hover{
-    text-shadow: darkgrey;
 }

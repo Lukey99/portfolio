@@ -1,25 +1,36 @@
 <html>
     <body>
-        <div class="menu">
+        <nav id="nav_id" class="nav">
+            <a href="#accueil" >
+                <div id="onglet" class="onglet" style="background-color: #a17d83;">
+                    <p>ACCUEIL</p>
+                </div>
+            </a>
+            <a href="#formations" >
+                <div id="onglet" class="onglet" style="background-color: #fabca0; animation-delay: 50ms;">
+                    <p>FORMATIONS</p>
+                </div>
+            </a>
+            <a href="#experiences" >
+                <div id="onglet" class="onglet" style="background-color: #ffffff; animation-delay: 100ms;">
+                    <p>EXPERIENCES</p>
+                </div>
+            </a>
+            <a href="#contact" >
+                <div id="onglet" class="onglet" style="background-color: #9ba5b1; animation-delay: 150ms;">
+                    <p>CONTACT</p>
+                </div>
+            </a> 
+        </nav>
+
+        <div id="menu" v-on:click="activateMenu()">
             <p style="margin-bottom: -125px;">M</p>
             <p style="margin-bottom: -125px;">E</p>
             <p style="margin-bottom: -125px;">N</p>
             <p>U</p>
         </div>
-        <nav>
-            <div class="onglet" style="background-color: #a17d83;">
-                <a href="#">ACCUEIL</a>
-            </div>
-            <div class="onglet" style="background-color: #fabca0;">
-                <a href="#">FORMATIONS</a>
-            </div>
-            <div class="onglet" style="background-color: #ffffff;">
-                <a href="#">EXPERIENCES</a>
-            </div>
-            <div class="onglet" style="background-color: #9ba5b1;">
-                <a href="#">CONTACT</a>
-            </div>
-        </nav>
+        
+        
     </body>
 </html>
 
