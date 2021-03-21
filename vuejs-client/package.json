@@ -9,6 +9,9 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "locomotive-scroll": "^4.1.0",
+    "scrollmagic": "^2.0.8",
+    "smooth-scrollbar": "^8.6.1",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0"
   },

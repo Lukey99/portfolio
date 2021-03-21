@@ -21,20 +21,18 @@ export default {
 
 <style>
 
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
+body{
+  overflow: hidden;
 }
 
 .router-view{
   position: absolute;
+  overflow-x: hidden;
   overflow-y: auto;
   left: 200px;
   top: 0;
   height: 100%;
-  width: 100%;
+  width: 1720px;
   background-color: red;
   transition: all 1s;
 }

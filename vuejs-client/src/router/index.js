@@ -12,7 +12,7 @@ const routes = [
     component: Accueil
   },
   {
-    path: '/#formations',
+    path: '/formations',
     name: 'Formations',
     component: Formations
   },

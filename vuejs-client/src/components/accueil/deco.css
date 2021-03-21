@@ -1,0 +1,6 @@
+.first_deco{
+    position: absolute;
+    left: -400px;
+    bottom: -1150px;
+    z-index: -1;
+}

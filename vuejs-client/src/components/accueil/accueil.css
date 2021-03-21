@@ -1,3 +1,67 @@
-.name{
-    padding: 50px;
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #c7a7ac;
+}
+
+.blocHorz{
+    display: flex;
+    flex-direction: row;
+    width: 300vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+}
+
+.container{
+    width: 100vw;
+    height: 1720px;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+}
+
+.main p{
+    animation: fadeIn ease-out 1s;
+}
+
+.title{
+    padding-top: 30px;
+    padding-left: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.lobby{
+    padding-left: 150px;
+    padding-top: 175px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.line{
+    position: absolute;
+    height: 2000px;
+    width: 5px;
+    left: 60px;
+    top: 150px;
+    border-radius: 50px;
+    background-color: #854b535d;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
