@@ -1,29 +1,29 @@
 <html>
     <body>
         <nav id="nav_id" class="nav">
-            <a href="#accueil" >
-                <div id="onglet" class="onglet" style="background-color: #a17d83;">
+            <a href="/" >
+                <div id="#onglet_id" class="onglet" style="background-color: #a17d83;" v-on:click="chosenTab()">
                     <p>ACCUEIL</p>
                 </div>
             </a>
             <a href="#formations" >
-                <div id="onglet" class="onglet" style="background-color: #fabca0; animation-delay: 50ms;">
+                <div id="onglet_id" class="onglet" style="background-color: #fabca0; animation-delay: 50ms;" v-on:click="chosenTab()">
                     <p>FORMATIONS</p>
                 </div>
             </a>
             <a href="#experiences" >
-                <div id="onglet" class="onglet" style="background-color: #ffffff; animation-delay: 100ms;">
+                <div id="onglet_id" class="onglet" style="background-color: #ffffff; animation-delay: 100ms;" v-on:click="chosenTab()">
                     <p>EXPERIENCES</p>
                 </div>
             </a>
             <a href="#contact" >
-                <div id="onglet" class="onglet" style="background-color: #9ba5b1; animation-delay: 150ms;">
+                <div id="onglet_id" class="onglet" style="background-color: #9ba5b1; animation-delay: 150ms;" v-on:click="chosenTab()">
                     <p>CONTACT</p>
                 </div>
             </a> 
         </nav>
 
-        <div id="menu" v-on:click="activateMenu()">
+        <div id="menu_id" class="menu" v-on:click="activateMenu()">
             <p style="margin-bottom: -125px;">M</p>
             <p style="margin-bottom: -125px;">E</p>
             <p style="margin-bottom: -125px;">N</p>

@@ -18,9 +18,31 @@ export default{
             if(document.getElementById('nav_id').classList.contains('active_nav')){
                 document.getElementById('nav_id').classList.add('visuallyhidden');
                 setTimeout(function(){
+                    document.getElementById('menu_id').classList.remove('extendedmenu');
+                }, 500);
+                setTimeout(function(){
                     document.getElementById('nav_id').classList.remove('active_nav');
                 }, 1020);
             }else{
+                document.getElementById('menu_id').classList.add('extendedmenu');
+                setTimeout(function(){
+                    document.getElementById('nav_id').classList.remove('visuallyhidden');
+                }, 20);
+                document.getElementById('nav_id').classList.add('active_nav');
+                
+            }
+        },
+        chosenTab(){
+            if(document.getElementById('nav_id').classList.contains('active_nav')){
+                document.getElementById('nav_id').classList.add('visuallyhidden');
+                setTimeout(function(){
+                    document.getElementById('menu_id').classList.remove('extendedmenu');
+                }, 500);
+                setTimeout(function(){
+                    document.getElementById('nav_id').classList.remove('active_nav');
+                }, 1020);
+            }else{
+                document.getElementById('menu_id').classList.add('extendedmenu');
                 setTimeout(function(){
                     document.getElementById('nav_id').classList.remove('visuallyhidden');
                 }, 20);
