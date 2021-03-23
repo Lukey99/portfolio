@@ -1,3 +1,5 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css";
+
 body::-webkit-scrollbar{
     display: none;
 }
@@ -78,17 +80,6 @@ nav{
     font-family: 'Lexend Zetta', sans-serif;
     transition: all 1s;
     animation: fadein ease-out 0.75s forwards;
-}
-
-@keyframes fadeout{
-    from{
-        opacity: 1;
-        transform: translateX(-1600px);
-    }
-    to{
-        opacity: 0;
-        transform: translateX(0);
-    }
 }
 
 .onglet:hover{

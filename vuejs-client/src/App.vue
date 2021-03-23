@@ -1,7 +1,6 @@
 <template>
 <body>
   <div id="app">
-    <router-view class="router-view"/>
     <Main/>
   </div>
 </body>
@@ -20,7 +19,6 @@ export default {
 </script>
 
 <style>
-
 body{
   overflow: hidden;
 }
@@ -33,6 +31,5 @@ body{
   top: 0;
   height: 100%;
   width: 1720px;
-  transition: all 1s;
 }
 </style>

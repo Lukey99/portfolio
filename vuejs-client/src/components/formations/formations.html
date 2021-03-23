@@ -1,22 +1,45 @@
 <body>
-    <div class="container">
-        <div class="title">
-            <p>Formations</p>
-        </div>
-        <div class="card-container">
-            <div style="margin-bottom: 100px;" class="card">
-                <div class="card-title">
-                    <p>Diplôme d'ingénieur</p>
-                </div>
+    <section>
+        <div class="container">
+            <div class="title">
+                <p>Formations</p>
             </div>
-            <div class="card">
-                <div class="card-title">
-                    <p>DUT GEII</p>
-                </div>
+            <div class="card-container">
+                <router-link to="/formations/ingenieur">
+                    <div style="margin-bottom: 100px;" class="card">
+                        <div class="card-title">
+                            <p>Diplôme d'ingénieur</p>
+                        </div>
+                        <div class="card-text">
+                            <p style="font-size: 26px; margin-bottom: -15px;">2019 - <B>22</B></p>
+                            <p style="font-size: 18px;">École d'ingénieur ESIEA || Formation en alternance</p>
+                            <p style="padding-top: 8px;">• Système d'information      • Architecture Logicielle      • Management de Produit</p>
+                            <p>• Programmation web      • Programmation orientée objet      • etc</p>
+                        </div>
+                    </div>
+                </router-link>         
+                
+                <router-link to="/formations/dut">
+                    <div class="card">
+                        <div class="card-title">
+                            <p>DUT GEII</p>
+                        </div>
+                        <div class="card-text">
+                            <p style="font-size: 26px; margin-bottom: -15px;">2017 - <B>19</B></p>
+                            <p style="font-size: 18px;">IUT de Créteil-Vitry || DUT Génie électrique et informatique industrielle</p>
+                            <p style="padding-top: 8px;">• Projet réseau de neurones      • Mesures de valeurs énergétiques      • Projets électroniques</p>
+                            <p>• Pilotage de microcontrôleur      • Programmation embarquée      • etc</p>
+                        </div>
+                    </div>
+                </router-link>
             </div>
+            <img style="top: 40px;" class="image-frame" src="../../assets/esiea.png"/>
+            <img style="top: 490px;" class="image-frame" src="../../assets/upec.png"/>
+            <img class="first_deco" style="top: -75px;" src="../../assets/frame_formation.png"/>
+            <img class="first_deco" style="top: 375px;" src="../../assets/frame_formation.png"/>
         </div>
-        <img style="top: 40px;" class="image-frame" src="../../assets/esiea.png"/>
-        <img style="top: 490px;" class="image-frame" src="../../assets/upec.png"/>
-        <img class="first_deco" src="../../assets/EXP.png"/>
-    </div>
+        <p style="position: absolute; top: 45px; left: 455px; color:#caaca0;">cliquer pour en savoir plus</p>
+        <p style="position: absolute; top: 495px; left: 455px; color:#caaca0;">cliquer pour en savoir plus</p>
+    </section>
+    
 </body>
