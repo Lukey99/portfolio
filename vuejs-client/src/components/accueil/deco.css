@@ -4,3 +4,10 @@
     bottom: -1150px;
     z-index: -1;
 }
+
+.sec_deco{
+    position: absolute;
+    left: 1250px;
+    bottom: 150px;
+    z-index: -1;
+}

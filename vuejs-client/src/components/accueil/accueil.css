@@ -25,7 +25,6 @@ body{
 }
 
 .main{
-    width: 100vw;
     height: 100vh;
 }
 
@@ -33,21 +32,9 @@ body{
     animation: fadeIn ease-out 1s;
 }
 
-.title{
-    padding-top: 30px;
-    padding-left: 50px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.lobby{
-    padding-left: 150px;
-    padding-top: 175px;
-    font-family: 'Montserrat', sans-serif;
-}
-
 .line{
     position: absolute;
-    height: 2000px;
+    height: 200%;
     width: 5px;
     left: 60px;
     top: 150px;

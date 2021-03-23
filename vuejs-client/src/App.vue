@@ -33,7 +33,6 @@ body{
   top: 0;
   height: 100%;
   width: 1720px;
-  background-color: red;
   transition: all 1s;
 }
 </style>

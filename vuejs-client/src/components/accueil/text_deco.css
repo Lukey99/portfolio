@@ -1,0 +1,28 @@
+.title{
+    padding-top: 30px;
+    padding-left: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.title2{
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 45px;
+}
+
+.introduction{
+    width: 60vw;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.lobby{
+    padding-left: 150px;
+    padding-top: 175px;
+    font-family: 'Montserrat', sans-serif;
+}
