@@ -1,40 +1,41 @@
 <html>
     <body>
-        <router-view class="router-view" v-slot="slot">
-            <transition name="slide" mode='out-in'>
-                <component :is="slot.Component"></component>
-            </transition>
-        </router-view>    
-        <nav id="nav_id" class="nav">
-            <router-link to="/" >
-                <div id="#onglet_id" class="onglet" style="background-color: #c7a7ac;" v-on:click="chosenTab()">
-                    <p>ACCUEIL</p>
-                </div>
-            </router-link>
-            <router-link to="/formations" >
-                <div id="onglet_id" class="onglet" style="background-color: #f5c9b5; animation-delay: 50ms;" v-on:click="chosenTab()">
-                    <p>FORMATIONS</p>
-                </div>
-            </router-link>
-            <router-link to="#experiences" >
-                <div id="onglet_id" class="onglet" style="background-color: #ffffff; animation-delay: 100ms;" v-on:click="chosenTab()">
-                    <p>EXPERIENCES</p>
-                </div>
-            </router-link>
-            <router-link to="#contact" >
-                <div id="onglet_id" class="onglet" style="background-color: #9ba5b1; animation-delay: 150ms;" v-on:click="chosenTab()">
-                    <p>CONTACT</p>
-                </div>
-            </router-link> 
-        </nav>
-
-        <div id="menu_id" class="menu" v-on:click="activateMenu()">
-            <p style="margin-bottom: -125px;">M</p>
-            <p style="margin-bottom: -125px;">E</p>
-            <p style="margin-bottom: -125px;">N</p>
-            <p>U</p>
-        </div>
-        
+        <template>
+            <router-view class="router-view" v-slot="slot">
+                <transition name="slide" mode='out-in'>
+                    <component :is="slot.Component"></component>
+                </transition>
+            </router-view>    
+            <nav id="nav_id" class="nav">
+                <router-link to="/" >
+                    <div id="#onglet_id" class="onglet" style="background: linear-gradient(-80deg, rgba(199,167,172,1) 0%, rgba(156,124,129,1) 100%);" v-on:click="chosenTab()">
+                        <p>ACCUEIL</p>
+                    </div>
+                </router-link>
+                <router-link to="/formations" >
+                    <div id="onglet_id" class="onglet" style="background: linear-gradient(15deg, rgba(208,158,158,1) 0%, rgba(208,169,128,1) 100%);; animation-delay: 50ms;" v-on:click="chosenTab()">
+                        <p>FORMATIONS</p>
+                    </div>
+                </router-link>
+                <router-link to="#experiences" >
+                    <div id="onglet_id" class="onglet" style="background-color: #ffffff; animation-delay: 100ms;" v-on:click="chosenTab()">
+                        <p>EXPERIENCES</p>
+                    </div>
+                </router-link>
+                <router-link to="#contact" >
+                    <div id="onglet_id" class="onglet" style="background-color: #9ba5b1; animation-delay: 150ms;" v-on:click="chosenTab()">
+                        <p>CONTACT</p>
+                    </div>
+                </router-link> 
+            </nav>
+    
+            <div id="menu_id" class="menu" v-on:click="activateMenu()">
+                <p style="margin-bottom: -125px;">M</p>
+                <p style="margin-bottom: -125px;">E</p>
+                <p style="margin-bottom: -125px;">N</p>
+                <p>U</p>
+            </div>    
+        </template>
         
     </body>
 </html>

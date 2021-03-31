@@ -17,6 +17,7 @@
     "scrollmagic": "^2.0.8",
     "smooth-scrollbar": "^8.6.1",
     "vue": "^2.6.11",
+    "vue-pseudo-window": "^1.0.0",
     "vue-router": "^3.2.0"
   },
   "devDependencies": {

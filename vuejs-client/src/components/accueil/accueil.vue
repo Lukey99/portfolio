@@ -8,9 +8,25 @@
 
 <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
 
-<script>
+<script type="text/javascript">
+    // var item = document.getElementsById('container')[0];
+    // window.addEventListener('wheel', function(e) {})
 
 export default {
-
+    mounted(){
+        window.addEventListener('wheel', function(e){
+            if(e.deltaY > 0){
+                document.getElementById('container').scrollLeft += 1000;
+                document.getElementById('line').classList.add('left');
+            }
+            else {
+                document.getElementById('container').scrollLeft -= 1000;
+                document.getElementById('line').classList.remove('left');
+            }
+        }),
+        document.querySelector('.main').scrollIntoView({
+            behavior: 'smooth'
+        });
+    }
 }
 </script>

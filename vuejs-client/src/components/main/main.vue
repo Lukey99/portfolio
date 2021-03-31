@@ -52,10 +52,4 @@ export default{
     }
 }
 
-// eslint-disable-next-line no-unused-vars
-let menu = document.getElementById('menu')
-// menu.addEventListener('click', function(){
-//     console.log("click !");
-// });
-
 </script>
